@@ -1,5 +1,6 @@
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.Arrays;
 
 /**
  * @author lykis
@@ -12,6 +13,19 @@ public class TestInetAdress {
 
             InetAddress inetAddress2 = InetAddress.getByName("www.baidu.com");
             System.out.println(inetAddress2);
+
+            InetAddress inetAddress3 = InetAddress.getLocalHost();
+            System.out.println(inetAddress3);
+
+            InetAddress inetAddress4 = InetAddress.getLoopbackAddress();
+            System.out.println(inetAddress4);
+
+            System.out.println(inetAddress2.getCanonicalHostName());
+            // 获取规范名
+
+            System.out.println(inetAddress2.getHostAddress());
+            System.out.println(inetAddress2.getHostName());
+
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author lykis
  */
-public class TestInetAdress {
+public class TestInetAddress {
     public static void main(String[] args) {
         try {
             InetAddress inetAddress1 = InetAddress.getByName("127.0.0.1");
